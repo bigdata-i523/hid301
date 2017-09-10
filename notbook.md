@@ -1,4 +1,4 @@
-#Logistic
+# Logistic
 
 * As of 09/1/17: Completed the introduction part and watched all the videos:   https://cloudmesh.github.io/classes/i523/2017/course/introduction.html
 
