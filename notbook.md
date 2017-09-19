@@ -12,4 +12,4 @@
     
 # Writing
 
-* 9/10/17-9/16/17 Target/TBD: To Install and Learn jabref
+* 9/10/17-9/16/17 Target/TBD: Installed and finished the jabref tutorial on 6/16
