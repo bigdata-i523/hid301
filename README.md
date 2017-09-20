@@ -9,8 +9,8 @@
 ```
 owner:
     hid: 301
-    name: 
-    url: 
+    name: Arora, Gagan
+    url: https://github.com/bigdata-i523/hid301
 ```
 
 # Paper 1
