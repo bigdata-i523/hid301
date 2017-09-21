@@ -34,9 +34,9 @@ paper2:
    - Gagan Arora 
    hid:
    - 301
-   title: This is my paper about the other abc
-   abstract: This paper showcases tis and that and the other in regards to abc
-   url: https://github.com/bigdata-i523/sample-hid000/paper2/paper2.pdf   
+   title: Prediction of psychological traits based on Big Data classification of associated social media footprints
+   type: latex
+   status: TBD
 ```
 
 # Project 
