@@ -18,14 +18,12 @@ owner:
 ```
 paper1:
    author: 
-   - Gregor von Laszewski
-   - Fugang Wang
+   - Gagan Arora
    hid:
-   - 000
-   - 001
-   title: This is my paper about xyz
-   abstract: This paper showcases tis and that and the other
-   url: https://github.com/bigdata-i523/sample-hid000/paper1/paper1.pdf
+   - 301
+   title: Big Data Analytics in Finance Industry
+   type: latex
+   status: In progress
 ```
    
 # Paper 2
@@ -33,9 +31,9 @@ paper1:
 ```
 paper2:
    author: 
-   - Gregor von Laszewski
+   - Gagan Arora 
    hid:
-   - 000
+   - 301
    title: This is my paper about the other abc
    abstract: This paper showcases tis and that and the other in regards to abc
    url: https://github.com/bigdata-i523/sample-hid000/paper2/paper2.pdf   
