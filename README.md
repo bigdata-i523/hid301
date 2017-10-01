@@ -24,6 +24,7 @@ paper1:
    title: Big Data Analytics in Finance Industry
    type: latex
    status: In progress
+   chapter: Buisiness
 ```
    
 # Paper 2
