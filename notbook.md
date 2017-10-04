@@ -8,13 +8,18 @@
 
 * As of 09/3/17 Watched all videso in the Theory Introduction section
 * As of 9/23: Read https://link.springer.com/content/pdf/10.1007/978-3-319-21569-3_12.pdf 
+* As of 10/3: Read https://www.cs.helsinki.fi/u/jilu/paper/bigdataapplication04.pdf
+* As of 10/3: Read https://whitepapers.em360tech.com/wp-content/files_mf/1427803213insideBIGDATAGuidetoBigDataforFinance.pdf
 
 # Practice
 
 * 09/03/17 Installed python compiler on local windows. Used Notepad++ to write simple "Hellow World" - compiled successfully 
 * committed the code for EPython.1 excercise to github 
+* Learned regular expression in Python 
+* Learned about NumPy arrays 
     
 # Writing
 
 * 9/10/17-9/16/17 Target/TBD: Installed and finished the jabref tutorial on 6/16
 * 9/16/17 - 9/23/17: Finished Latex tutorial and learnt how to use jabref 
+* Still reading reserach papers 
