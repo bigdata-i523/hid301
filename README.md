@@ -23,7 +23,7 @@ paper1:
    - 301
    title: Big Data Analytics in Finance Industry
    type: latex
-   status: In progress
+   status: 100%
    chapter: Business
 ```
    
