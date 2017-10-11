@@ -37,7 +37,7 @@ paper2:
    - 301
    title: Prediction of psychological traits based on Big Data classification of associated social media footprints
    type: latex
-   status: TBD
+   status: 10%
 ```
 
 # Project 
