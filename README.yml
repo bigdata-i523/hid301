@@ -1,0 +1,23 @@
+---
+owner:
+    hid: 301
+    name: Arora, Gagan
+    url: https://github.com/bigdata-i523/hid301
+paper1:
+    author:
+        - Gagan Arora
+    chapter: Business
+    hid:
+        - 301
+    status: 100%
+    title: Big Data Analytics in Finance Industry
+    type: latex
+paper2:
+    abstract: This paper showcases tis and that and the other
+    author:
+        - Gregor von Laszewski
+    hid:
+        - 0
+    title: Benchmarking a BigData Docker deployment
+    type: report
+    url: https://github.com/bigdata-i523/sample-pid000/project/report.pdf
