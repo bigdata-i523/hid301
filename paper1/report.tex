@@ -1,6 +1,17 @@
 \documentclass[sigconf]{acmart}
 
-\input{format/i523}
+\usepackage{hyperref}
+
+\usepackage{endfloat}
+\usepackage{graphicx} %package to manage images
+\graphicspath{ {images/} }
+\renewcommand{\efloatseparator}{\mbox{}} % no new page between figures
+
+\usepackage{booktabs} % For formal tables
+
+\settopmatter{printacmref=false} % Removes citation information below abstract
+\renewcommand\footnotetextcopyrightpermission[1]{} % removes footnote with conference information in first column
+\pagestyle{plain} % removes running headers
 
 \begin{document}
 \title{Big Data Analytics in Finance Industry}
@@ -20,10 +31,11 @@
 
 
 \begin{abstract}
-Discusses the importance of Big data, data classification, cross industry comparison and analytic and its impact on finance industry and how customer satisfaction can be improved to achieve competitive advantage 
+Discusses the importance of Big data, data classification, cross industry comparison and analytic and its impact on finance industry and how customer satisfaction can be improved to achieve competitive advantage.
+We will also discuss the qualitative and quantitative aspect of big data in Finance industry and how we can leverage big data in achieving high quality financial products. 
 \end{abstract}
 
-\keywords{Big data,finance, data classification,HID301, data type, big data impact, cross-industry comparison, banking, customer personalization, pattern recognition, multi document summarization, structured and unstructured data}
+\keywords{Big data,finance, i523, data classification,HID301, data type, big data impact, cross-industry comparison, banking, customer personalization, pattern recognition, multi document summarization, structured and unstructured data}
 
 
 \maketitle
@@ -34,7 +46,7 @@ By its nature of the business, the finance industry is always driven and dominat
 
 \section{Market impact: Pace at which market is adding data}
 
-\cite{Ref2}  talks about the three V of big data in finance industry: volume, velocity and variety. We will also discuss the fourth V aspect of it in a later section, which is a vulnerability. Fig 1 \cite{Ref3} clearly depicts the amount of financial data pouring in the daily basis. TechNavio’s forecast (Technavio 2016) predicts data will grow at a CAGR [compound annual growth rate] of 61 percent over the period of 2017-2021. According to the IDC financial insight 2016, every second there is around 10,000-payment card transaction and this number is expected to double by the end of this decade. The Capgemini/RBS Global payments study for 2012 suggests there was about 260 billion transactions in 2012 and is expected to grow between 15 and 22 percent for developing countries. Main drivers contributing to the big data in the finance industry are Data growth, increasing scrutiny from regulators, digitalization of financial products, changing the business model and increased customer insight platforms such as customer service.  Fig 2 [\cite{Ref2}] shows 76 percent of banks say the business driver for embracing big data is to enhance customer engagement, retention, and loyalty and 71 percent of banks say that to increase their revenue, they need to better understand customers and big data will help them to do so. 
+\cite{Ref2}  talks about the three V of big data in finance industry: volume, velocity and variety. We will also discuss the fourth V aspect of it in a later section, which is a vulnerability. \cite{Ref3} clearly depicts the amount of financial data pouring in the daily basis. TechNavio’s forecast (Technavio 2016) predicts data will grow at a CAGR [compound annual growth rate] of 61 percent over the period of 2017-2021. According to the IDC financial insight 2016, every second there is around 10,000-payment card transaction and this number is expected to double by the end of this decade. The Capgemini/RBS Global payments study for 2012 suggests there was about 260 billion transactions in 2012 and is expected to grow between 15 and 22 percent for developing countries. Main drivers contributing to the big data in the finance industry are Data growth, increasing scrutiny from regulators, digitalization of financial products, changing the business model and increased customer insight platforms such as customer service. \cite{Ref2} shows 76 percent of banks say the business driver for embracing big data is to enhance customer engagement, retention, and loyalty and 71 percent of banks say that to increase their revenue, they need to better understand customers and big data will help them to do so. 
 
 \section{Competition/problem: How peer industry adding data and their initiative  }
 
@@ -68,17 +80,6 @@ There are multiple challenges and constraints in extracting value out of big fin
 
 In this section, we will discuss various technical requirements needed to achieve value extraction from the big data in the finance industry. There are various technical requirements such as Data Acquisition, Data Quality, Data Extraction, Data Integration, Decision support. In order to fulfill requirements, a hybrid approach combining computer science, algorithms, statistics, data mining, machine learning and pattern recognition study needs to be adopted. To explore the advantage of big data there have been initiatives like data virtualization, multi-document summarization, pattern recognition from LOGS and many start-ups have been emerged.  All big companies such as Microsoft, Google, IBM and Amazon are investing heavily in this field to leverage business and commercial value out of it. There has been changed in the industry pattern where financial industry is resorting big data to strategize their business. According to \cite{Ref3}  with a very rapid pace, the financial industry is utilizing big data advantage in investment analysis, econometrics, risk assessment, fraud detection, trading, customer interaction analysis and behavior modeling. If we look at the Big promise the Big data holds in the finance industry, progress in this field is still in nascent stage and we expect more growth in upcoming years.  
 
-\begin{figure}[p!]
-    \includegraphics{images/dataTypes.JPG}
-    \caption{Figure 1}
-    \label{fig:figure1}
-\end{figure}
-
-\begin{figure}[p!]
-    \includegraphics{images/bankingBigData.JPG}
-    \caption{Figure 2}
-    \label{fig:figure2}
-\end{figure}
 
 \bibliographystyle{ACM-Reference-Format}
 \bibliography{report} 
