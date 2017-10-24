@@ -13,11 +13,12 @@ paper1:
     title: Big Data Analytics in Finance Industry
     type: latex
 paper2:
-    abstract: This paper showcases tis and that and the other
+    abstract: Prediction of psychological traits based on Big Data classification of associated social media footprints
     author:
-        - Gregor von Laszewski
+        - Gagan Arora
     hid:
-        - 0
-    title: Benchmarking a BigData Docker deployment
-    type: report
-    url: https://github.com/bigdata-i523/sample-pid000/project/report.pdf
+        - 301
+    status: 10%
+    title: Prediction of psychological traits based on Big Data classification of associated social media footprints 
+    type: latex
+    url: https://github.com/bigdata-i523/hid301/project/report.pdf
