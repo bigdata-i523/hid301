@@ -1,0 +1,139 @@
+\documentclass[sigconf]{acmart}
+
+\input{format/i523}
+
+\begin{document}
+\title{Prediction of psychological traits based on Big Data classification of associated social media footprints}
+
+
+\author{Gagan Arora}
+\orcid{}
+\affiliation{%
+  \institution{Indiana University}}
+  \streetaddress{2709 E 10th St}
+  \city{Bloomington}} 
+  \state{Indiana} 
+  \postcode{47401}
+}
+\email{gkarora@iu.edu}
+
+% The default list of authors is too long for headers}
+\renewcommand{\shortauthors}{Gagan Arora}
+
+
+\begin{abstract}
+This paper provides a sample of a \LaTeX\ document which conforms,
+somewhat loosely, to the formatting guidelines for
+ACM SIG Proceedings.
+\end{abstract}
+
+\keywords{Big Data, Edge Computing i523, psychological traits, Big Data, Facebook Data, Social media, digital foot prints, five factor model, personality traits }
+
+
+\maketitle
+
+
+\section{Introduction}
+
+Put here an introduction about your topic. 
+We just need one sample refernce so the paper compiles in LaTeX so we
+put it here \cite{editor00}.
+
+
+
+\section{Introduction}}
+With the advancement of digital media and social media networks, there has been enormous amount of human activities, which is recorded as the digital footprints.
+ According to IBM, in 2012 on an average 500 MB of personal data is uploaded to the online digital database. This data is either in the form of social media 
+ activities such as Facebook likes, Facebook comments, profile picture upload, tweets or in the form offline transactions where person goes to grocery shopping 
+ and pays using credit card. According to \cite{ref1} China is investing heavy technological resources to mine this data along with person’s financial transactions to
+ build social credit system. This project is expected to be implemented by 2020. There has been studies \cite{ref2} – \cite{ref7}, which analyzed the behavior outcomes of 
+ the digital profile with the actual characteristics of an individual. Interesting thing about these studies is that human behavior can be mapped statistically
+ to define similarities and differences between individuals. This can further be used to build recommendation-based system to enrich social medial networks such 
+ as Facebook, LinkedIn, and Twitter etc. These studies \cite{ref2} – \cite{ref7} further contributes in radically improving our behavior understanding of humans.
+ \cite{ref4} discusses about the predictability of individual’s psychological traits using statistical approach to arrive at the personality traits with certain confidence
+ level. Psychological traits automation can further be used to enrich the quality of recommendation based systems & online search engines. \cite{ref8} suggest how these
+ studies \cite{ref2} – \cite{ref7} can be used to improve online marketing systems.  With so many advantages on one side, on other side it possesses biggest challenge to the
+ Data privacy \cite{ref9} - \cite{ref10}.  Reason why these studies \cite{ref2} – \cite{ref7} provide better estimate of human psychological traits as compared to results of psychometric test
+ because these study results \cite{ref2} – \cite{ref7} takes the data of prolonged history. However, psychometric tests on the other hands  is for few minutes or hours where
+ human can manipulate response in order to achieve desire results. Thus, these studies \cite{ref2} – \cite{ref7} can also be leveraged in employee hiring process where many
+ companies still relies on psychometric tests. 
+
+ 
+ \section{Data source of big data in digital world}
+ 
+ This section discusses how we can import, store and preprocess digital big data. This data can be fetched online via REST api or its direct available to download from website such as mypersonality.org. This site stores the social media data of close to six million participants. There are other sites like Stanford network analysis project, which contains enormous amount of data in the form of product reviews, Tweets, and social media data. Social medial sites like Instagram and Twitter provides public rest APIs through which we can access data, which is public. Other example is Amazon.com, which provides elegant web services to access product reviews. For preprocessing of this data, Python provides excellent libraries to access [via web service call] and preprocess data. 
+ 
+ \section{Human Behavior and Personality }
+\cite{ref11} talks about various models, which can be used to describe human personality. Among all, five-factor model [FFM] is proved to be the best model to describe human behavior, psychological traits and preferences: Openness, Conscientiousness, Extroversion, Agreeableness & Emotional stability. We have data, we have psychological traits, and biggest challenge lies in extracting value out of big data and mapping the result to psychological traits. To accomplish this challenge we can perform singular value decomposition to map the qualitative data to quantitative data. To elaborate this further let us take an example: we have a Facebook likes of 10 million people and we filter down top 100 Facebook pages, which are of relevance. Top 100 relevant pages are those, which can predict factors mentioned in FFM. Now we will prepare Boolean matrix with Facebook user profile on vertical axis and Facebook page as horizontal axis. In simple words row represents Facebook user and column represents Facebook page. We will mark the coordinate as one if corresponding Facebook user [on vertical axis] likes a page [on horizontal axis] otherwise zero. Therefore, matrix will look like this:
+
+$$\bordermatrix{\text{}&fbPage_1 &fbPage_2&\ldots &fbPage_n\cr
+                user_1&1 &  0  & \ldots & 1\cr
+                user_2& 0  &  1 & \ldots & 1\cr
+                user_3& \vdots & \vdots & \ddots & \vdots\cr
+                user_n& 1  &   1       &\ldots & 1}$$
+
+These 100 Facebook pages is clustered, based on the five factors mentioned in FFM. First twenty pages will represent first factor, second twenty pages will represent second factor and so on. Next step would be to build correlation matrix that represents how each person is correlated with each other based on the five factors. This matrix will be N by N where is N is number of Facebook users in this experiment. This matrix will help to determine how similar Facebook users are. Which will help us to build the recommendation based systems because similar peoples tends to like same pages and share same psychological traits. This correlation matrix will look like this:
+
+$$\bordermatrix{\text{}&user_1 &user_2&\ldots &user_n\cr
+                user_1&1 &  .75  & \ldots & .85\cr
+                user_2& .75  &  1 & \ldots & .91\cr
+                user_3& \vdots & \vdots & \ddots & \vdots\cr
+                user_n& .85  &   .91       &\ldots & 1}$$               
+                
+
+\begin{algorithm}
+Step 1: Build binary matrix with Facebook user profile on vertical axis and Facebook page as horizontal axis.
+Step 2: Populate the binary matrix with one and zero depending on if person has liked the page or not.
+Step 3: Sort Facebook page columns depending on the factors mentioned in FFM. 
+Step 4: Use this matrix to build correlational matrix represents how each person is correlated with each other based on the five factors.
+Step 5: Apply k-mean algorithm to group Facebook users of similar factors mentioned in FFM. 
+\end{algorithm}
+
+\section{Computer based personality judgement and human based personality judgement}
+ Research \cite{ref12} has shown computer based personality judgments are more accurate than those made by humans. According to \cite{ref12}  perceiving and judging people’s personality is an important component of living society. Many cognitive decision made by humans are based on the judgement they have in their mind. This research \cite{ref12} has shown how advance machine learning algorithms and statistical tools can be used to predict the personality traits and compared the results with the human judgments. This research also addresses the issue of substantiating the qualitative aspects of behavior with the quantitative parameters. Computer based personality judgment is not only based on machine learning or statistics but computer vision algorithms can also be used to distinguish facial emotions and concluding psychological traits. 
+ 
+\section{Social Network as a personality trait predictor}
+ \cite{ref13} studies suggest how valuable social network is in predicting the psychological traits.  According to \cite{ref13}, It is considered as one of the valuable digital footprints to predict intimate personal traits. For instance, number of friends and their location can be used to grade first factor of FFM, which is openness. Person’s romantic partner can be detected depending on the social network overlap of each friend, which can further be analyzed to predict one’s sexual preference. These predictions can further be statistically analyzed to \cite{ref12} to know how accurate predictions are. We can use social network data on the algorithm discussed in the “Human Behavior and Personality” and conclude a very strong predictions on the psychological traits of a person. It has been in the news that 2016 elections were strategized with the help of the social media big data which will be discussed in the next section.
+ 
+\section{Social Media big data and its impact on political elections}
+
+\cite{ref14} suggests how last year elections were revolutionized by the impact of big data of social media. Using statistical and machine learning  algorithms on social media big data, political parties filtered down the data to identify their likely supporters and then channelized their strategy to win their votes. These strategies were less expensive than conducting campaigns at various places.  Traditional analysis is generally based on the  survey which is in the sense is limited \cite{ref15} but now with the ease of big social media data, analysis is more accurate and conclusive. There has been sophisticated tools available that can predict the person’s race depending on his or her name and location. In recent election, political parties also combined social media data and public data [from census Bureau] to run sophisticated machine learning algorithm to pinpoint their supports.  All these mentioned ways helped the political parties to micro target their supporters and gained their votes. 
+
+\section{Social Activity – the predictor of personality}
+
+\cite{ref13} suggests Facebook profile of a user is not static rather it also contains enriched records of digital footprints such as likes, comments, reactions to other posts. Such activities materializes the connections between user and content. This information along with the other activities such as playlist, browsing logs, online shopping activities and google queries can be used to develop sophisticated highly predictive FFM set for a user and with a very high confidence level can predict user’s age, gender, intelligence religious view and sexual orientation \cite{ref13}. Very interesting example from the \cite{ref13} suggests “Users who liked Hello Kitty brand tended to have high openness, low conscientiousness, and low agreeableness” – strange but very interesting! \cite{ref13} research further elaborate the importance of comments. Semantic analysis on comment can be analyzed to infer one’s personality as shown by the research: \cite{ref16} and \cite{ref17}. 
+ 
+\section{Conclusion}
+
+We discussed various ways in which social medial data can be utilized to build five factor personality model for a user. Main purpose here is to review the literature work done in this field and also presented the algorithm which can be used to translate qualitative data to quantitative data and hoe value can be extracted to build FFM for a user. We discussed computer based personality judgments are better than the human based personality judgments. We also touched based where social network can be used to predict user’s personality.  As discussed earlier, these researches \cite{ref2} – \cite{ref7}  have proved to impact the general election last year in United states. Finally we concluded by showing evidences how social activity can be used to build the FFM for a user. 
+
+
+\begin{acks}
+
+  The authors would like to thank Dr. Gregor von Laszewski and all the TA's for their
+  support and suggestions to write this paper. 
+
+\end{acks}
+
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{report} 
+
+\appendix
+
+We include an appendix with common issues that we see when students
+submit papers. One particular important issue is not to use the
+underscore in bibtex labels. Sharelatex allows this, but the
+proceedings script we have does not allow this.
+
+When you submit the paper you need to address each of the items in the
+issues.tex file and verify that you have done them. Please do this
+only at the end once you have finished writing the paper. To d this
+cange TODO with DONE. However if you check something on with DONE, but
+we find you actually have not executed it correcty, you will receive
+point deductions. Thus it is important to do this correctly and not
+just 5 minutes before the deadline. It is better to do a late
+submission than doing the check in haste. 
+
+\input{issues}
+
+\end{document}
