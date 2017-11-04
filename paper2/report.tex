@@ -1,5 +1,6 @@
 \documentclass[sigconf]{acmart}
-
+\usepackage{algorithm}% http://ctan.org/pkg/algorithms
+\usepackage{algpseudocode}% http://ctan.org/pkg/algorithmicx
 \input{format/i523}
 
 \begin{document}
@@ -9,9 +10,9 @@
 \author{Gagan Arora}
 \orcid{}
 \affiliation{%
-  \institution{Indiana University}}
+  \institution{Indiana University}
   \streetaddress{2709 E 10th St}
-  \city{Bloomington}} 
+  \city{Bloomington}
   \state{Indiana} 
   \postcode{47401}
 }
@@ -37,11 +38,11 @@ ACM SIG Proceedings.
 
 Put here an introduction about your topic. 
 We just need one sample refernce so the paper compiles in LaTeX so we
-put it here \cite{editor00}.
+put it here.
 
 
 
-\section{Introduction}}
+\section{Introduction}
 With the advancement of digital media and social media networks, there has been enormous amount of human activities, which is recorded as the digital footprints.
  According to IBM, in 2012 on an average 500 MB of personal data is uploaded to the online digital database. This data is either in the form of social media 
  activities such as Facebook likes, Facebook comments, profile picture upload, tweets or in the form offline transactions where person goes to grocery shopping 
@@ -51,7 +52,7 @@ With the advancement of digital media and social media networks, there has been 
  to define similarities and differences between individuals. This can further be used to build recommendation-based system to enrich social medial networks such 
  as Facebook, LinkedIn, and Twitter etc. These studies \cite{ref2} – \cite{ref7} further contributes in radically improving our behavior understanding of humans.
  \cite{ref4} discusses about the predictability of individual’s psychological traits using statistical approach to arrive at the personality traits with certain confidence
- level. Psychological traits automation can further be used to enrich the quality of recommendation based systems & online search engines. \cite{ref8} suggest how these
+ level. Psychological traits automation can further be used to enrich the quality of recommendation based systems and online search engines. \cite{ref8} suggest how these
  studies \cite{ref2} – \cite{ref7} can be used to improve online marketing systems.  With so many advantages on one side, on other side it possesses biggest challenge to the
  Data privacy \cite{ref9} - \cite{ref10}.  Reason why these studies \cite{ref2} – \cite{ref7} provide better estimate of human psychological traits as compared to results of psychometric test
  because these study results \cite{ref2} – \cite{ref7} takes the data of prolonged history. However, psychometric tests on the other hands  is for few minutes or hours where
@@ -64,7 +65,7 @@ With the advancement of digital media and social media networks, there has been 
  This section discusses how we can import, store and preprocess digital big data. This data can be fetched online via REST api or its direct available to download from website such as mypersonality.org. This site stores the social media data of close to six million participants. There are other sites like Stanford network analysis project, which contains enormous amount of data in the form of product reviews, Tweets, and social media data. Social medial sites like Instagram and Twitter provides public rest APIs through which we can access data, which is public. Other example is Amazon.com, which provides elegant web services to access product reviews. For preprocessing of this data, Python provides excellent libraries to access [via web service call] and preprocess data. 
  
  \section{Human Behavior and Personality }
-\cite{ref11} talks about various models, which can be used to describe human personality. Among all, five-factor model [FFM] is proved to be the best model to describe human behavior, psychological traits and preferences: Openness, Conscientiousness, Extroversion, Agreeableness & Emotional stability. We have data, we have psychological traits, and biggest challenge lies in extracting value out of big data and mapping the result to psychological traits. To accomplish this challenge we can perform singular value decomposition to map the qualitative data to quantitative data. To elaborate this further let us take an example: we have a Facebook likes of 10 million people and we filter down top 100 Facebook pages, which are of relevance. Top 100 relevant pages are those, which can predict factors mentioned in FFM. Now we will prepare Boolean matrix with Facebook user profile on vertical axis and Facebook page as horizontal axis. In simple words row represents Facebook user and column represents Facebook page. We will mark the coordinate as one if corresponding Facebook user [on vertical axis] likes a page [on horizontal axis] otherwise zero. Therefore, matrix will look like this:
+\cite{ref11} talks about various models, which can be used to describe human personality. Among all, five-factor model [FFM] is proved to be the best model to describe human behavior, psychological traits and preferences: Openness, Conscientiousness, Extroversion, Agreeableness and Emotional stability. We have data, we have psychological traits, and biggest challenge lies in extracting value out of big data and mapping the result to psychological traits. To accomplish this challenge we can perform singular value decomposition to map the qualitative data to quantitative data. To elaborate this further let us take an example: we have a Facebook likes of 10 million people and we filter down top 100 Facebook pages, which are of relevance. Top 100 relevant pages are those, which can predict factors mentioned in FFM. Now we will prepare Boolean matrix with Facebook user profile on vertical axis and Facebook page as horizontal axis. In simple words row represents Facebook user and column represents Facebook page. We will mark the coordinate as one if corresponding Facebook user [on vertical axis] likes a page [on horizontal axis] otherwise zero. Therefore, matrix will look like this:
 
 $$\bordermatrix{\text{}&fbPage_1 &fbPage_2&\ldots &fbPage_n\cr
                 user_1&1 &  0  & \ldots & 1\cr
@@ -82,11 +83,14 @@ $$\bordermatrix{\text{}&user_1 &user_2&\ldots &user_n\cr
                 
 
 \begin{algorithm}
-Step 1: Build binary matrix with Facebook user profile on vertical axis and Facebook page as horizontal axis.
-Step 2: Populate the binary matrix with one and zero depending on if person has liked the page or not.
-Step 3: Sort Facebook page columns depending on the factors mentioned in FFM. 
-Step 4: Use this matrix to build correlational matrix represents how each person is correlated with each other based on the five factors.
-Step 5: Apply k-mean algorithm to group Facebook users of similar factors mentioned in FFM. 
+
+
+\textbf{\textit{Step 1}}: Build binary matrix with Facebook user profile on vertical axis and Facebook page as horizontal axis.\newline
+\textbf{\textit{Step 2}}: Populate the binary matrix with one and zero depending on if person has liked the page or not.\newline
+\textbf{\textit{Step 3}}: Sort Facebook page columns depending on the factors mentioned in FFM.\newline 
+\textbf{\textit{Step 4}}: Use this matrix to build correlational matrix represents how each person is correlated with each other based on the five factors.\newline
+\textbf{\textit{Step 5}}: Apply k-mean algorithm to group Facebook users of similar factors mentioned in FFM. 
+
 \end{algorithm}
 
 \section{Computer based personality judgement and human based personality judgement}
