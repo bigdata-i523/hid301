@@ -22,7 +22,7 @@ paper2:
     status: 100%  Nov 4 
     title: Prediction of psychological traits based on Big Data classification of associated social media footprints 
     type: latex
-    url: https://github.com/bigdata-i523/hid301/project/report.pdf
+    url: https://github.com/bigdata-i523/hid301/blob/master/paper2/report.tex
 
 project:
    type: project   
