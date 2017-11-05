@@ -13,6 +13,7 @@ paper1:
     title: Big Data Analytics in Finance Industry
     type: latex
 paper2:
+    review: Nov 6 2017
     abstract: Prediction of psychological traits based on Big Data classification of associated social media footprints
     author:
         - Gagan Arora
