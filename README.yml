@@ -17,6 +17,7 @@ paper2:
     abstract: Prediction of psychological traits based on Big Data classification of associated social media footprints
     author:
         - Gagan Arora
+    chapter: Machine Learning
     hid:
         - 301
     status: 100%  Nov 4 
