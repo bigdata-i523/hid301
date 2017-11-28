@@ -7,6 +7,7 @@
 * Watched Meeting notes and video for online office hours October 10
 * Attended the webinar on Big data analytics: https://www.youtube.com/watch?v=3SK9iJNYehg
 * Watched https://www.youtube.com/watch?v=8DqQCZMawNg 
+*  Watched Meeting notes and video for online office hours Nov 27
 
 # Theory
 
@@ -18,6 +19,7 @@
 * Af of 10/30: Continued the python tutorial: https://docs.python.org/3/tutorial/datastructures.html
 * As of 11/19 Read tutorials on pandas, CV2 and other useful libraries 
 * As of 11/20 Read https://www.econ.berkeley.edu/sites/default/files/Selene%20Yue%20Xu.pdf
+* Ad of 11/27 Finished tutorials on https://www.quantstart.com/articles#python-implementation
 
 # Practice
 
@@ -30,6 +32,7 @@
 * 10/30/17: Installed Anaconda & Jupyter 
 * 11/19/17 Read machine learning notebook and created 3 notebooks and uploaded to the experiment/jupyter directory
 * 11/20/17 Explored pandas_datareader library and its source code: https://github.com/pydata/pandas-datareader/blob/master/pandas_datareader/yahoo/daily.py
+* 11/27/17 Learnt how to implement Black-Scholes Pricing Formula in python 
     
 # Writing
 
@@ -43,3 +46,4 @@
 * 10/28/17: Read for Paper 2: https://4f46691c-a-dbcb5f65-s-sites.googlegroups.com/a/michalkosinski.com/michalkosinski/ieee2.pdf?attachauth=ANoY7col3PubEjdmdIv9K4CstemHsgGbL254qZg-wLfrE_ufUYt-Fz4Ilo_nQC40baJLu6n1PEBKs84UK-O4Y3cZ8BviYGJAnMVnxvWOrtpG8V_enWOP5rQ6sTncy-t-divvSPliT4g4IWYqzgvRbEuVOCN9_lm5VTqrzuZDRLLZeo7GKyOWDF3SexaIo-Y-f9ZqOKp6HLmjI3nibP5N9SlpTdtBovDSHg%3D%3D&attredirects=0
 * 11/19/2017 Created the draft for final project. 
 * 11/20/2017 Continued writing report for final project
+* 11/27/2017 Continued writing report for final project
