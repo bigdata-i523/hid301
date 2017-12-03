@@ -48,3 +48,4 @@
 * 11/20/2017 Continued writing report for final project
 * 11/27/2017 Continued writing report for final project
 * 11/30/2017 Continued writing report for final project
+* 12/2/2017 Finished the project report 
