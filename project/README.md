@@ -1,6 +1,8 @@
 Report format
 =============
 
+Please note jupyter noteboook is attached to project folder:  	finalProject.ipynb
+
 This directory contains a template that will be used for writing
 reports. It is important that you do not modify the template so all
 students have the same format template.
