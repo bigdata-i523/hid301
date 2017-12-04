@@ -1,7 +1,7 @@
 Report format
 =============
 
-Please note jupyter noteboook is attached to project folder:  	finalProject.ipynb
+Please note jupyter noteboook is attached to project folder:  	finalProject.ipynb : https://github.com/bigdata-i523/hid301/blob/master/project/finalProject.ipynb
 
 This directory contains a template that will be used for writing
 reports. It is important that you do not modify the template so all
