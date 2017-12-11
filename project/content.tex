@@ -176,7 +176,7 @@ notebook based solution for Data extraction.
 
 \indent
 In this project we have used jupyter notebook and rich python libraries to fetch financial stock data. Later in this paper we will discuss the stock data 
-extration in detail. Later we will also discuss what are different ways to fetch stock data and will discuss few important functions which python libraries 
+extraction in detail. Later we will also discuss what are different ways to fetch stock data and will discuss few important functions which python libraries 
  
 \section{Fetching financial stock data}
 
@@ -421,7 +421,7 @@ with the daily returns so this needs to be normalized to daily rate. Here we are
 is \texttt{\^TNX}. Please note \texttt{get\_data\_yahoo} will return columns: Open, High, Low, Close, Adj Close and Volume. Dot values will convert to 2 dimensional array 
 and then used index [0][4] to fetch annual rate. Detailed code with comments is mentioned on jupyter notebook. 
 
-Converstion of annualized return to daily return can be done using following formula:
+Conversion of annualized return to daily return can be done using following formula:
 
 \indent
 $$riskFreeDailyRate = (1+riskFreeAnnualRate) \hat{} (1/365) -1 $$
@@ -506,7 +506,7 @@ In this project we used quantitative based approach to validate the fact if more
 there is a importance of recent data in predicting results. This is also validated by the research done under \cite{Ref14}
 
 
-\section{Conclusion}
+\section{Limitation}
 In this project, analysis is based on two technological stocks: yahoo and amazon. We can extend our study to more diverse portfolio by including more stocks 
 from various industries. Technological stocks tend to be more volatile than other stocks. Since this project is purely quantitative based prediction we 
 deliberately chosen the technological stocks to leverage their volatility. More accurate prediction could also be made by encapsulating qualitative based prediction
@@ -515,6 +515,7 @@ deliberately chosen the technological stocks to leverage their volatility. More 
 the root mean square analysis which is discussed in this project report.  
 
 
+\section{Conclusion}
 Main objective of doing this project is to know the importance of big data in predicting financial variables. Analysis of this project is based on two stocks:
 amazon and yahoo. We started this project report with the discussion of importance of big data in financial industry. In the introduction we discussed how various
 industries are investing in the Big Data to attain higher standards in terms of quality and customer satisfaction. Then we discussed what are the various types 
