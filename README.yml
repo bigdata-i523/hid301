@@ -28,28 +28,27 @@ paper2:
         classification of associated social media footprints
     type: latex
     url: https://github.com/bigdata-i523/hid301/blob/master/paper2/report.tex
-
 project:
-   type: project   
-   author:
-   - Gagan Arora
-   hid:
-   - 301
-   title: >
-       Importance of Big data in predicting stock price 
-   abstract: >
-       In this project, we will predict the stock price of few
-       selected technology companies such as Amazon, Yahoo depending
-       on the historical data of x years. Similarly, we will predict
-       the price based on y years of data.  The prediction will be
-       based on S&P 500 market return and market risk volatility.
-       Here y > x and then we will compare the predicted prices with
-       the current stock price. This project will help us understand
-       if more historic data helps in predicting the stock price or it
-       adds noise. We will be using statistical approach and CAPM
-       [capital asset pricing model ] to predict stock price.
-   analytics: Statistics 
-   application: Finance
-   chapter: Business
-   keywords: HID-301, Stock Price prediction, Finance, Statistics, i523
-   status: 100% 12/2/2017
+    type: project   
+    author:
+        - Gagan Arora
+    hid:
+        - 301
+    title: >
+        Importance of Big data in predicting stock price 
+    abstract: >
+        In this project, we will predict the stock price of few
+        selected technology companies such as Amazon, Yahoo depending
+        on the historical data of x years. Similarly, we will predict
+        the price based on y years of data.  The prediction will be
+        based on S&P 500 market return and market risk volatility.
+        Here y > x and then we will compare the predicted prices with
+        the current stock price. This project will help us understand
+        if more historic data helps in predicting the stock price or it
+        adds noise. We will be using statistical approach and 
+        capital asset pricing model to predict stock price.
+    analytics: Statistics 
+    application: Finance
+    chapter: Business
+    keywords: HID-301, Stock Price prediction, Finance, Statistics, i523
+    status: 100% 12/2/2017
